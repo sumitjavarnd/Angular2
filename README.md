@@ -46,3 +46,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Commit 4.1  - Providing inline style
 * Open app.component.ts
 * change styleUrls attribute to style and add h3 color style to dodgerblue.
+
+# Commit 5 - Fully understanding the component selector
+* Open servers.component.ts
+* Change selector value to [app-servers] which is basically an attribute selector
+* Now open app.component.html
+* Add new div like <div app-servers></div> to make code work. Because now we have specified attribute selector so <app-servers> i.e. element selector won't work
+* Similarly you can also use class selecor like adding new div <div class="app-servers"></div> and selector value to '.app-servers'
+* In Angular you cannot use id selector and sudo selectors.
