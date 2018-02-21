@@ -33,3 +33,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * It will also add ServersComponent entry in app.module.ts
 * Replace content of servers.component.html with multiple app-server tags.
 * And instead of using app-server in app.component.html, use app-servers tag.
+
+# Commit 3 - Instead of using external template i.e. html file, we can also provide inline template
+* Open servers.component.ts
+* change templateUrl attribute to template for providing inline template
+* If using single quote then you cannot wrap lines in template value. But if you want to wrap value use `
