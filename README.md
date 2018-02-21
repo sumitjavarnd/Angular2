@@ -42,3 +42,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Commit 4 - Added bootstrap classes like container, row in app.component.html
 * Open app.component.css
 * specify color to h3 like dark blue
+
+# Commit 4.1  - Providing inline style
+* Open app.component.ts
+* change styleUrls attribute to style and add h3 color style to dodgerblue.
