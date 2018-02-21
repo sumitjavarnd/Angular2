@@ -38,3 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Open servers.component.ts
 * change templateUrl attribute to template for providing inline template
 * If using single quote then you cannot wrap lines in template value. But if you want to wrap value use `
+
+# Commit 4 - Added bootstrap classes like container, row in app.component.html
+* Open app.component.css
+* specify color to h3 like dark blue
