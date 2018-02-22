@@ -54,3 +54,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Add new div like <div app-servers></div> to make code work. Because now we have specified attribute selector so <app-servers> i.e. element selector won't work
 * Similarly you can also use class selecor like adding new div <div class="app-servers"></div> and selector value to '.app-servers'
 * In Angular you cannot use id selector and sudo selectors.
+
+# Commit - 6 Databinding
+* String Interpolation - Output data from typescript code to template(html) ({{data}})
+- Open server.component.html
+- Adding paragraph {{'Server'}} with ID {{serverId}} is {{getServerStatus()}}
+- Open server.component.ts
+- Adding serverId and serverStatus attribute in ServerComponent class
+- Created getServerStatus method to return server status attribute
+* Restrictions with String Interpolation
+- You can't write multiline expressions, blockline expressions so you cannot write an if, for control structures.
+You could use a ternary expression though.
+- String interpolation has to resolve to a string, so, anything which ca be converted into string works fine.
+
+* Property Binding - For example say when user clicks a button in template we may want to trigger something in our typescript code. ([propery]="data")
+- Open servers.component.html
+- Adding button Add Server with bootstrap class btn and btn-primary and disabled attribute
+- Open servers.components.ts
+- Add boolean attribute allowNewServer and set value to false in class ServersComponent
+- Add constructor and set timeout of 2ms in constructor in which setting allowNewServer value  to true.
+- Open servers.component.html
+- Surround disabled attribute with square brackets like [disabled]="!allowNewServer"
+
+* Two way binding - ([ngModel]="data")
