@@ -77,3 +77,11 @@ You could use a ternary expression though.
 - Surround disabled attribute with square brackets like [disabled]="!allowNewServer"
 
 * Two way binding - ([ngModel]="data")
+
+# Commit - Event Binding
+* Open servers.component.ts
+* Add a new attribute serverCreationStatus and initialize it with value like No Server was created.
+* Now add a new method onCreateServer and in this method write code to set serverCreationStatus value to Server was created.
+* Open servers.component.html
+* Add a new paragraph with String Interpolation value of serverCreationStatus
+* On Add Server button, add a new angular event binding (click)="onCreateServer" 
